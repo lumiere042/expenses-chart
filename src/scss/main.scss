@@ -1,0 +1,77 @@
+@use 'assets' as i;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size:18px;
+    font-family: i.$dm-sans;
+}
+
+
+
+body{
+    background-color: i.$pale-orange;
+}
+
+.container{
+    flex-wrap: wrap;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    margin: auto;
+}
+
+.my-balance-container{
+    margin-top: 180px;
+    margin-bottom: 50px;
+    background-color: i.$soft-red;
+    border-radius: 25px;
+    padding-top: 25px;
+}
+
+.my-balance-content{
+    width: 90%;
+    margin: auto;
+    display:flex;
+    justify-content: space-between;
+
+    h1{
+        font-weight: 100;
+        font-size: 1.3rem;
+        letter-spacing: 0.01295rem;
+        color: #FFF;
+    }
+
+    .account-balance{
+        margin-top:20px;
+        font-size: 2rem;
+        color:#FFF;
+        font-weight: 700;
+    }
+}
+
+.spending-section-container{
+    background-color: #FFF;
+    border-radius: 15px;
+}
+
+.spending-section-content{
+    width: 90%;
+    margin: auto;
+
+    h1{
+        margin-top: 30px;
+        font-size: 1.8rem;
+        color: i.$dark-brown;
+    }
+}
+
+@media all and (max-width:700px){
+    .container{
+        width: 70%;
+    }
+
+
+}
